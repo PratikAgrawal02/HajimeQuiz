@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:title="Home">
+            <menu>
+                <item android:id="@+id/Home_menu"
+                    android:icon="@drawable/home_vector"
+                    android:title="Home"/>
+                <item android:id="@+id/profile_menu"
+                    android:title="Profile Page"
+                    android:icon="@drawable/profile_vector"/>
+                <item android:title="Contact Us"
+                    android:icon="@drawable/about_us_vector"
+                    android:id="@+id/aboutus_menu"/>
+            </menu>
+
+
+        </item>
+
+
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="About">
+            <menu>
+                <item android:id="@+id/developer_menu"
+                    android:title="Developer Profile"
+                    android:icon="@drawable/developer_vector"/>
+                <item android:icon="@drawable/privacy_policy"
+                    android:title="Privacy Policy"
+                    android:id="@+id/privacy_policy_menu"/>
+                <item android:id="@+id/TnC_menu"
+                    android:title="Terms and Conditions"
+                    android:icon="@drawable/about_us_vector"/>
+            </menu>
+        </item>
+
+
+    </group>
+    <item android:title="Sharing">
+        <menu>
+            <item android:title="Share App"
+                android:icon="@drawable/share_vector"
+                android:id="@+id/share_app_menu"/>
+            <item android:title="Rate App"
+                android:icon="@drawable/rateapp"
+                android:id="@+id/rate"/>
+        </menu>
+    </item>
+</menu>

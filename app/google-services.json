@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "800355843601",
+    "firebase_url": "https://hajime-quiz-85d73-default-rtdb.firebaseio.com",
+    "project_id": "hajime-quiz-85d73",
+    "storage_bucket": "hajime-quiz-85d73.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800355843601:android:8e8073d38dd11546fb3bb0",
+        "android_client_info": {
+          "package_name": "com.hajime.hajimequiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800355843601-m0khc6p8s5ld3qfmo6opu46flrs0vrc1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXUvqN6-9CEDDM5yA-lDD935H4I46Ittk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800355843601-m0khc6p8s5ld3qfmo6opu46flrs0vrc1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

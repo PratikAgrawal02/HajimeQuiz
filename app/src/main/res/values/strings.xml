@@ -1,0 +1,24 @@
+<resources>
+
+    <string name="app_name">HajQuiz</string>
+    <string name="about_me">Hey There!\nI am a B.tech Student studying in Indian Institute of Information Technology, Sri city.\nI am an Android developer and a programmer.Do check out my profiles for Details and if you want to contact me, I have shared Instagram, LinkedIn, Gmail, and Telegram profiles.</string>
+    <string name="motive">Don\'t stop until you are Proud</string>
+
+
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="packagename">com.hajime.hajimequiz</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="navigation_open">Open drawer</string>
+    <string name="navigation_close">Close drawer</string>
+    <string name="developer">Pratik Agrawal</string>
+
+</resources>

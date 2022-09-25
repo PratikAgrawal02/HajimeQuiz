@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientqna"
+    tools:context=".Result">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="1dp"
+        android:background="#F2FA937B"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:clickable="true"
+            android:onClick="close"
+            app:srcCompat="@drawable/ic_back"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:clickable="true"
+            android:contextClickable="false"
+            android:fontFamily="@font/poppins_extrabold"
+            android:onClick="close"
+            android:text="EXIT"
+            android:textColor="#F4F2F2"
+            android:textSize="22sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Space
+            android:layout_width="17dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0" />
+    </LinearLayout>
+
+    <com.mikhaellopez.circularprogressbar.CircularProgressBar
+        android:id="@+id/circularProgressBar"
+        android:layout_width="121dp"
+        android:layout_height="111dp"
+        android:layout_marginTop="96dp"
+        app:cpb_background_progressbar_color="@color/red"
+        app:cpb_background_progressbar_width="9dp"
+        app:cpb_progress="5"
+        app:cpb_progress_direction="to_right"
+        app:cpb_progress_max="10"
+        app:cpb_progressbar_color="@color/green"
+        app:cpb_progressbar_width="13dp"
+        app:cpb_round_border="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/current_score"
+        android:layout_width="76dp"
+        android:layout_height="38dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="0 / 5"
+        android:textAlignment="textStart"
+        android:textColor="@color/orange"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@+id/circularProgressBar"
+        app:layout_constraintEnd_toEndOf="@+id/circularProgressBar"
+        app:layout_constraintStart_toStartOf="@+id/circularProgressBar"
+        app:layout_constraintTop_toTopOf="@+id/circularProgressBar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="331dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circularProgressBar">
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="89dp"
+                android:layout_height="115dp"
+                app:srcCompat="@drawable/profile12" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/medal_third_place" />
+
+            <TextView
+                android:id="@+id/winner3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|textPersonName"
+                android:text="ThirdPlace"
+                android:textAlignment="center"
+                android:textColor="#B34204"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/image1st"
+                android:layout_width="89dp"
+                android:layout_height="115dp"
+                app:srcCompat="@drawable/profile6" />
+
+            <ImageView
+                android:id="@+id/imagemedal1st"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/medal_first_place" />
+
+            <TextView
+                android:id="@+id/winner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Firstplace"
+                android:textAlignment="center"
+                android:textColor="#E3D135"
+                android:inputType="textMultiLine|textPersonName"
+
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="60dp" />
+
+            <ImageView
+                android:id="@+id/image2nd"
+                android:layout_width="89dp"
+                android:layout_height="115dp"
+                app:srcCompat="@drawable/profile20" />
+
+            <ImageView
+                android:id="@+id/imagemedal2nd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/medal_second_place" />
+
+            <TextView
+                android:id="@+id/winner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine|textPersonName"
+                android:text="SecondPlace"
+                android:textAlignment="center"
+                android:textColor="#5A5959"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/totalscore"
+        android:layout_width="212dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="16dp"
+        android:text="Your Final Score of all time is ___ Points."
+        android:textColor="@color/orange"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/circularProgressBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/circularProgressBar"
+        app:layout_constraintTop_toTopOf="@+id/circularProgressBar" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="280dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/poppins_extrabold"
+        android:text="Congratulations...🎉"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="163dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/poppins_light_italic"
+        android:text="LeaderBoard"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

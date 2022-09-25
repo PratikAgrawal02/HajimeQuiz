@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/map_finded" />
+
+        <ImageButton
+            android:id="@+id/user_profile_photo"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-60dp"
+            android:background="@drawable/profile11"
+            android:contentDescription="Avatar"
+            android:elevation="5dp"
+            android:padding="20dp"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_cover_image"
+            android:background="@color/orange"
+            android:elevation="4dp"
+            android:paddingBottom="24dp">
+
+
+            <TextView
+                android:id="@+id/user_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="69dp"
+                android:fontFamily="@font/poppins_extrabold"
+                android:text="@string/app_name"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_profile_short_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_profile_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/poppins_light_italic"
+                android:text="@string/motive"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/profile_layout"
+            android:layout_marginTop="5dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextTextPersonName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Your Name"
+                android:inputType="textPersonName"
+                android:padding="20dp" />
+
+            <EditText
+                android:id="@+id/editTextTextEmailAddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="#fff"
+                android:clickable="true"
+                android:elevation="4dp"
+                android:ems="10"
+                android:fontFamily="@font/poppins"
+                android:hint="Your Email"
+                android:inputType="textEmailAddress"
+                android:padding="20dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20sp" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/orange"
+                android:onClick="savedata"
+                android:text="Save" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Choose your Avatar"
+                android:textAlignment="center"
+                android:textColor="@color/orange"
+                android:textSize="20sp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_weight="0.1"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/Profile1"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:clickable="true"
+                    android:onClick="avatarchange"
+                    app:srcCompat="@drawable/profile1"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageView
+                    android:id="@+id/Profile2"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:clickable="true"
+                    android:onClick="avatarchange"
+                    app:srcCompat="@drawable/profile2"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageView
+                    android:id="@+id/Profile3"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:clickable="true"
+                    android:onClick="avatarchange"
+                    app:srcCompat="@drawable/profile3"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageView
+                    android:id="@+id/Profile4"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:clickable="true"
+                    android:onClick="avatarchange"
+                    app:srcCompat="@drawable/profile4"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageView
+                    android:id="@+id/Profile5"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:clickable="true"
+                    android:onClick="avatarchange"
+                    app:srcCompat="@drawable/profile5"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/Profile6"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:clickable="true"
+                    android:onClick="avatarchange"
+                    app:srcCompat="@drawable/profile6"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageView
+                    android:id="@+id/Profile7"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:clickable="true"
+                    android:onClick="avatarchange"
+                    app:srcCompat="@drawable/profile7"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageView
+                    android:id="@+id/Profile8"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:clickable="true"
+                    android:onClick="avatarchange"
+                    app:srcCompat="@drawable/profile8"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageView
+                    android:id="@+id/Profile9"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:clickable="true"
+                    android:onClick="avatarchange"
+                    app:srcCompat="@drawable/profile9"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageView
+                    android:id="@+id/Profile10"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:clickable="true"
+                    android:onClick="avatarchange"
+                    app:srcCompat="@drawable/profile10"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20sp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/Profile11"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:alpha="0.5"
+                    android:clickable="true"
+                    android:onClick="avatarchange"
+                    app:srcCompat="@drawable/profile11"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageView
+                    android:id="@+id/Profile12"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:clickable="true"
+                    android:onClick="avatarchange"
+                    app:srcCompat="@drawable/profile12"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageView
+                    android:id="@+id/Profile13"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:clickable="true"
+                    android:onClick="avatarchange"
+                    app:srcCompat="@drawable/profile13"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageView
+                    android:id="@+id/Profile14"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:clickable="true"
+                    android:onClick="avatarchange"
+                    app:srcCompat="@drawable/profile14"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <ImageView
+                    android:id="@+id/Profile15"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:clickable="true"
+                    android:onClick="avatarchange"
+                    app:srcCompat="@drawable/profile15"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </LinearLayout>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40sp" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="44dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:clickable="true"
+            android:onClick="close"
+            app:srcCompat="@drawable/ic_back"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </RelativeLayout>
+</ScrollView>

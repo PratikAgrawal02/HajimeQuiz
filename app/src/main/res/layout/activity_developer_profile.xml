@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/insta"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="contact"
+    android:tag="1"
+    tools:context=".developer_profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="44dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:clickable="true"
+            android:onClick="close"
+            app:srcCompat="@drawable/ic_back"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/header_cover_image"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/map_finded" />
+
+        <ImageButton
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/header_cover_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-60dp"
+            android:background="@drawable/pratik"
+            android:contentDescription="Avatar"
+            android:elevation="5dp"
+            android:padding="20dp"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:id="@+id/profile_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_cover_image"
+            android:background="@color/orange"
+            android:elevation="4dp"
+            android:paddingBottom="24dp">
+
+
+            <TextView
+                android:id="@+id/user_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="69dp"
+                android:fontFamily="@font/poppins_extrabold"
+                android:text="@string/developer"
+                android:textColor="#fff"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/user_profile_short_bio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/user_profile_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="0dp"
+                android:fontFamily="@font/poppins_light_italic"
+                android:text="B.tech , IIIT Sri city"
+                android:textColor="#fff"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile_layout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="19dp"
+            android:fontFamily="@font/poppins"
+            android:maxLines="20"
+            android:singleLine="false"
+            android:text="@string/about_me"
+            android:textColor="#090909"
+            app:layout_constraintStart_toEndOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView10"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="52dp"
+            android:tag="1"
+            app:srcCompat="@drawable/insta" />
+
+        <ImageView
+            android:id="@+id/linkdin"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView10"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="52dp"
+            android:layout_toEndOf="@+id/imageView9"
+            android:clickable="true"
+            android:onClick="contact"
+            android:tag="2"
+            app:srcCompat="@drawable/linkdien"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView10"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="52dp"
+            android:layout_toEndOf="@+id/linkdin"
+            android:clickable="true"
+            android:onClick="contact"
+            android:tag="3"
+            app:srcCompat="@drawable/telegram"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView10"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="52dp"
+            android:layout_marginEnd="20dp"
+            android:layout_toEndOf="@+id/imageView12"
+            android:clickable="true"
+            android:onClick="contact"
+            android:tag="4"
+            app:srcCompat="@drawable/gmail"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
